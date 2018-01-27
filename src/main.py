@@ -4,9 +4,9 @@ from flask import Flask
 
 app = Flask(__name__)
 
-from handlers.helloworld import get_helloworld
+from handlers.trulyauthul import get_trulyauthul
 
-get_helloworld(app)
+get_trulyauthul(app)
 
 @app.errorhandler(500)
 def server_error(e):
